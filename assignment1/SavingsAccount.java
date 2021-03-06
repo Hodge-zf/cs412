@@ -10,18 +10,6 @@ public class SavingsAccount{
       this.savingsBalance = savingsBalance;
     }
 
-/*    public double getAnnualInterestRate{
-      return annualInterestRate;
-    }
-
-    public double getSavingsBalance{
-      return savingsBalance;
-    }
-
-    public void setAnnualInterestRate{
-      this.
-    }*/
-
     public double calculateMonthlyInterest(){
 
       monthlyInterest = savingsBalance * (annualInterestRate/12);
