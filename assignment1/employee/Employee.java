@@ -2,6 +2,15 @@ public abstract class Employee{
 
   private String firstName, lastName, socialSecurityNumber;
 
+  Employee[] Employees = new Employee[100];
+
+  public void printEmployees(Employee Employees[]){
+    for (int i = 0; i < Employees.length; i++){
+      System.out.println(Employees[i]);
+      System.out.println(Employees[i].earnings());
+    }
+  }
+
   public Employee(String first, String last, String ssn){
     firstName = first;
     lastName = last;
@@ -39,4 +48,5 @@ public abstract class Employee{
   }
 
   public abstract double earnings();
+
 }
